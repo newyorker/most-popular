@@ -42,9 +42,7 @@
         <table class="form-table">
             <tr valign="top">
                 <th scope="row"><label for="api_source"><?php _e('Source'); ?></label></th>
-                <td>
-					<?php $this->printSelectTag("api_source", array("none" => "None", "parsley" => "Parse.ly"), $options["api_source"]); ?>
-				</td>
+                <td><?php $this->printSelectTag("api_source", array("none" => "None", "parsley" => "Parse.ly"), $options["api_source"]); ?></td>
             </tr>
             <tr valign="top">
                 <th scope="row"><label for="api_key"><?php _e('API Key'); ?></label></th>
@@ -61,7 +59,7 @@
             <tr valign="top">
                 <th scope="row"><label for="number_of_results"><?php _e('Number of results'); ?></label></th>
                 <td><?php $this->printSelectTag("number_of_results", array("3" => "3", "5" => "5", "10" => "10"), $options["number_of_results"]); ?></td>
-			</tr>
+	</tr>
         </table>
         <p class="submit">
             <input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e('Save Changes') ?>" />
